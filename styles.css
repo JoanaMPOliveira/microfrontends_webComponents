@@ -1,0 +1,9 @@
+span[name="id"] {
+    display: none;
+}
+span[name="title"] {
+    font-size: 30px;
+} 
+span[name="subtitle"] {
+    font-size: 22px;
+} 
