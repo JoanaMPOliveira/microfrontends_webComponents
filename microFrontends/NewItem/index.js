@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import reactToWebComponent from 'react-to-webcomponent';
 import PropTypes from 'prop-types';
 import NewForm from '../../components/NewForm';
+import { NewItemStyled } from './styles';
 
 class NewItem extends React.Component {
 
@@ -12,9 +13,9 @@ class NewItem extends React.Component {
         const itemObj = JSON.parse(items)[0]
 
         return (
-            <div>
+            <NewItemStyled>
                 <NewForm item={itemObj} />
-            </div>
+            </NewItemStyled>
         )
     }
 }

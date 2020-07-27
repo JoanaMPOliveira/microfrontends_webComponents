@@ -1,11 +1,26 @@
 import { items } from './data';
 
+const setActiveNavItem = () => {
+    const navItems = document.getElementsByClassName('nav-item')
+
+    for (let item of navItems) {
+        if (item.children[0].pathname === window.location.pathname) {
+            item.classList.add('active')
+        } else {
+            item.classList.remove('active')
+        }
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
+    setActiveNavItem()
+
     // Specification for fields that should be displayed on list (they MUST be iqual to data object keys)
     let listFields = ['title', 'subtitle', 'link']
 
     // These element types are defined by the above scripts
     const webComponentsByRoute = {
+        '/': 'micro-fe-home',
         '/items-list': 'micro-fe-items-list',
         '/new-item': 'micro-fe-new-item',
         '/item-view': 'micro-fe-item-view'
@@ -23,4 +38,5 @@ document.addEventListener('DOMContentLoaded', function () {
         webComponent.setAttribute('fields', JSON.stringify(listFields))
     }
     root.appendChild(webComponent);
+
 })

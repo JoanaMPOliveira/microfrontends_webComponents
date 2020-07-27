@@ -2,8 +2,83 @@ span[name="id"] {
     display: none;
 }
 span[name="title"] {
-    font-size: 30px;
+    font-size: 18px;
 } 
 span[name="subtitle"] {
-    font-size: 22px;
-} 
+    font-size: 16px;
+}
+#micro-frontend-root a {
+    color: grey;
+    text-decoration: none;
+}
+a.button,
+.button {
+    margin: 50px 20px;
+    padding: 10px 30px;
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.button--btn-blue {
+    background: -webkit-linear-gradient(left, #00a1e4 0, #00a99d 100%);
+    color: white;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px 0 white;
+    transition: 0.5s ease-in-out;
+}
+.button--btn-blue:hover,
+.button--btn-blue:focus {
+    transform: scale(1.05);
+}
+.button--btn-white {
+    background: white;
+    color: #00a1e4;
+    border: 1px solid #00a1e4;
+    box-shadow: 0 0 10px 0 #00a1e4;
+    transition: 0.5s ease-in-out;
+}
+.button--btn-white:hover,
+.button--btn-white:focus {
+    transform: scale(1.05);
+}
+
+.container--white {
+    vertical-align: baseline;
+    padding: 20px 10%;
+    background: #F0F0F0;
+    color: grey
+
+}
+.container--blue {
+    background: -webkit-linear-gradient(left, #00a1e4 0, #00a99d 100%);
+    color: white;
+
+}
+
+.active *,
+.nav-item:hover,
+.nav-item:focus {
+    font-weight: 600;
+    background: -webkit-linear-gradient(left, #00a1e4 0, #00a99d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+}
+ul.navbar-nav {
+    padding-top: 9px;
+}
+.navbar-brand,
+.span-blue {
+    background: -webkit-linear-gradient(left, #00a1e4 0, #00a99d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

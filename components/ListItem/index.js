@@ -1,21 +1,22 @@
 import React from 'react'
+import { ListItemStyled, ItemButtonStyled, ItemColumnStyled } from './styles'
 
 class ListItem extends React.Component {
     render() {
         const { item, fields } = this.props
         return (
-            <li>
+            <ListItemStyled>
                 {fields.map((field, index) => (
-                    <div key={index}>
+                    <ItemColumnStyled key={index}>
                         { field === 'link' ? 
                             <a href={item[field]}>{item[field]}</a>
                             :
                             <span name={field}>{item[field]}</span>
                         }
-                    </div>
+                    </ItemColumnStyled>
                 ))}
-                <a href={`/${item.id}/item-view`}>View</a>
-            </li>
+                <ItemButtonStyled href={`/${item.id}/item-view`}>View</ItemButtonStyled>
+            </ListItemStyled>
 
         )
     }

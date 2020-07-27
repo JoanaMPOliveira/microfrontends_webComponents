@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import reactToWebComponent from 'react-to-webcomponent';
 import PropTypes from 'prop-types';
 
+import { ItemViewStyled, ItemFieldStyled, ItemLinkStyled } from './styles';
+
 
 class ItemView extends React.Component {
 
@@ -12,17 +14,17 @@ class ItemView extends React.Component {
         const id = pathnameElems[pathnameElems.length - 2]
         const item = JSON.parse(items).filter(item => item.id == id)[0]
         return (
-            <div>
+            <ItemViewStyled>
                 {Object.keys(item).map(key => (
-                <div>
+                <ItemFieldStyled>
                     {key == 'link' ?
-                    <a href={item[key]}>{item[key]}</a>
+                    <ItemLinkStyled href={item[key]}>{item[key]}</ItemLinkStyled>
                     :
                     <span name={key}>{item[key]}</span>
                     }
-                </div>
+                </ItemFieldStyled>
                 ))}
-            </div>
+            </ItemViewStyled>
 
         )
     }

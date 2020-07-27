@@ -11,10 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "html-to-react": "^1.4.3",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-to-webcomponent": "^1.4.0",
+    "styled-components": "^5.1.1",
     "uuid": "^8.2.0"
   }
 }
