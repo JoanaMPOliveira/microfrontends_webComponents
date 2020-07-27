@@ -67,7 +67,7 @@ export const ButtonInputStyled = styled.input`
     &:focus {
         transform: scale(1.05);
     }
-`
+    `
 export const ButtonCancelStyled = styled.a`
     padding: 10px 30px;
     width: 250px;
@@ -75,14 +75,16 @@ export const ButtonCancelStyled = styled.a`
     font-size: 16px;
     font-weight: 600;
     background-color: white;
-    background: -webkit-linear-gradient(left, #00a1e4 0, #00a99d 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    border: 1px solid grey;
-    box-shadow: 0 0 10px 0 white;
+    box-shadow: 0 0 10px 0 grey;
+    transition: 0.5s ease-in-out;
+    span {
+        background: -webkit-linear-gradient(left, #00a1e4 0, #00a99d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     &:hover,
     &:focus {
         transform: scale(1.05);

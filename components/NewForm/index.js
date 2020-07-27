@@ -38,7 +38,7 @@ class NewForm extends React.Component {
         
                 ))}
                 <ButtonGroupStyled>
-                    <ButtonCancelStyled href="/items-list">Cancel</ButtonCancelStyled>
+                    <ButtonCancelStyled href="/items-list"><span>Cancel</span></ButtonCancelStyled>
                     <ButtonInputStyled type="submit" value="Submit" />
                 </ButtonGroupStyled>
             </FormStyled>
