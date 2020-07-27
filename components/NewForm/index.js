@@ -1,7 +1,7 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-import { FormStyled, FormGroupStyled, ButtonInput } from './styles'
+import { FormStyled, FormGroupStyled, ButtonGroupStyled, ButtonInputStyled, ButtonCancelStyled } from './styles'
 
 class NewForm extends React.Component {
     handleSubmit = (event) => {
@@ -37,7 +37,10 @@ class NewForm extends React.Component {
                     </FormGroupStyled>
         
                 ))}
-                <ButtonInput type="submit" value="Submit" />
+                <ButtonGroupStyled>
+                    <ButtonCancelStyled href="/items-list">Cancel</ButtonCancelStyled>
+                    <ButtonInputStyled type="submit" value="Submit" />
+                </ButtonGroupStyled>
             </FormStyled>
         )
     }

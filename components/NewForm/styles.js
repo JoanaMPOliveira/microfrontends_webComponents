@@ -41,9 +41,15 @@ export const FormGroupStyled = styled.div`
 
     }
 `
-
-export const ButtonInput = styled.input`
+export const ButtonGroupStyled = styled.div`
     margin: 20px 10% 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+`;
+export const ButtonInputStyled = styled.input`
+    margin-left: 20px;
     padding: 10px 30px;
     width: 250px;
     height: 50px;
@@ -61,4 +67,24 @@ export const ButtonInput = styled.input`
     &:focus {
         transform: scale(1.05);
     }
+`
+export const ButtonCancelStyled = styled.a`
+    padding: 10px 30px;
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+    background: -webkit-linear-gradient(left, #00a1e4 0, #00a99d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid grey;
+    box-shadow: 0 0 10px 0 white;
+    &:hover,
+    &:focus {
+        transform: scale(1.05);
+    }    
 `
